@@ -9,6 +9,7 @@ function App() {
     rise: "none",
     set: "none",
     tzid: "none",
+    latlng: [0, 0],
   });
 
   return (

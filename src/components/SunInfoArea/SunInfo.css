@@ -30,7 +30,7 @@
     content: " ";
     position: absolute;
     bottom: 100%; 
-    left: 20%;
+    left: 20px;
     margin-left: -10px;
     border-width: 10px;
     border-style: solid;
