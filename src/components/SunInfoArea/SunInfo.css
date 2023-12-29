@@ -1,0 +1,73 @@
+.sun-info-container {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    background-color: rgba(110, 88, 254, 0.9);
+    border: 0;
+    border-radius: 0px 0px 30px 0px;
+    box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.8);
+}
+
+.icon-container {
+    cursor: pointer;
+    position: relative;
+    margin-right: 0.8em;
+}
+
+.icon-tooltip {
+    position: absolute;
+    pointer-events: none;
+    bottom: -40px;
+    color: white;
+    background-color: darkslategrey;
+    white-space: nowrap;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.icon-tooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%; 
+    left: 20%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent  darkslategray transparent;
+}
+
+
+.icon {
+    font-size: 2em;
+}
+
+.location-header {
+    width: 100%;
+    margin: 20px;
+    color: #0b0055;
+}
+
+.location-header h1 {
+    width: 100%;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.location-header p {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .sun-info-container {
+        transform-origin: top left;
+        scale: 0.7
+    }
+
+    .location-header p {
+        white-space: nowrap;
+    }
+}
